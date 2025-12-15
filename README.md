@@ -1,51 +1,31 @@
-React Calculator App
+🧮 React Calculator – CI/CD with Jenkins & Docker
 
-Description:
-A simple calculator app built with React.js. It supports basic arithmetic operations like addition, subtraction, multiplication, and division. This project is designed for learning React, Docker, and CI/CD practices.
+A React-based calculator application automated using Jenkins CI/CD pipeline and Docker.
 
-Features
+🚀 What this project does
 
-Simple and clean UI
+Dockerizes the application
+Pushes the Docker image to Docker Hub
+Pulls and deploys the container using Jenkins
 
-Supports addition, subtraction, multiplication, and division
+🛠 Tech Stack
+React (Vite)
+Jenkins
+Docker & Docker Hub
+Nginx
 
-Responsive design (works on desktop and mobile)
+🔄 CI/CD Flow
+GitHub → Jenkins → Docker Build → Docker Hub → Deploy Container
 
-Built with React.js
+🐳 Run Manually
+docker pull raheeljamal/react-calculator:latest
+docker run -d -p 80:80 raheeljamal/react-calculator:latest
 
-Ready for Dockerization and CI/CD pipeline
+📂 Key Files
 
-Installation
+Dockerfile – App containerization
+Jenkinsfile – CI/CD automation
 
-Clone the repository
+👨‍💻 Author
 
-git clone https://github.com/<your-username>/react-calculator-app.git
-cd react-calculator-app
-
-
-Install dependencies
-
-npm install
-
-
-Run the app locally
-
-npm start
-
-
-Open http://localhost:3000 in your browser.
-
-Docker Setup
-
-Build Docker image
-
-docker build -t react-calculator-app .
-
-
-Run Docker container
-
-docker run -p 80:80 react-calculator-app
-
-CI/CD
-
-This project can be connected to GitHub Actions for automatic builds and deployments using Docker.
+Raheel Jamal – DevOps & Cloud Enthusiast
