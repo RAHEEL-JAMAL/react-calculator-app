@@ -4,7 +4,7 @@ import Calculator from './components/Calculator';
 function App() {
   return (
     <div className="app">
-      <h1>Scientific Calculator</h1>
+      <h1>Scientific Calculator by Raheel jamal</h1>
       <Calculator />
     </div>
   );
